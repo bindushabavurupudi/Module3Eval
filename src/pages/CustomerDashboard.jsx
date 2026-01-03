@@ -1,4 +1,4 @@
-
+import RestaurantCards from "../components/RestaurantCards";
 function CustomerDashboard(){
  return(
 <div>
