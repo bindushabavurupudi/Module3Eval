@@ -15,7 +15,10 @@ function App() {
       <Route path="/admin/dashboard" element={<ProtectedRoutes>
         <Admindashboard/>
       </ProtectedRoutes>}/>
-      <Route path="/admin/restaurants" element = {<ProtectedRoutes>
+      <Route path="/admin/restaurants/add" element={<ProtectedRoutes role="admin">
+        <AddRestaurant/>
+      </ProtectedRoutes>}/>
+      <Route path="/customers/dashboard" element = {<ProtectedRoutes>
         <CustomerDashboard/>
       </ProtectedRoutes>}/>
     </Routes>

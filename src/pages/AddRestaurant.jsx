@@ -32,7 +32,6 @@ function AddRestaurant(){
     addRestaurant(form);
     alert("Restaurant added successfully");
     navigate("/admin/dashboard");
-
   };
   return (
     <div>
