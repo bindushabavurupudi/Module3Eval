@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 export const AuthContext = createContext();
+
 function AuthContextProvider({children}){
     const [auth, setAuth] = useState(
         JSON.parse(localStorage.getItem("auth")) || null
@@ -22,9 +23,7 @@ function AuthContextProvider({children}){
     };
     // const logout
     return (
-        <>
          <AuthContext.Provider value={{auth, login}}>{children}</AuthContext.Provider>
-        </>
     );
 }
 
