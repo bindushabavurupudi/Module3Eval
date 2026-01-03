@@ -1,11 +1,12 @@
-import RestaurantCards from 
+import RestaurantCards from "../components/RestaurantCards";
+import { Link } from "react-router-dom";
 function Admindashboard(){
     return (
 
         <div>
             <h2>Admin Dashboard</h2>
-            <SearchAndFilters/>
-            <RestaurantCards isAdmin={true}/>
+            <Link to="/admin/restaurants/add">Add Restaurant</Link>
+            <RestaurantCards/>
         </div>
     )
 }
